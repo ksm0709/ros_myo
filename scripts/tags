@@ -1,0 +1,89 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Arm	myonode.py	/^class Arm(enum.Enum):$/;"	c
+BT	myonode.py	/^class BT(object):$/;"	c
+FINGERS_SPREAD	myonode.py	/^    FINGERS_SPREAD = 4$/;"	v	class:Pose
+FIST	myonode.py	/^    FIST = 1$/;"	v	class:Pose
+K	analogTurtle.py	/^	K = 0.005$/;"	v
+LEFT	myonode.py	/^    LEFT = 2$/;"	v	class:Arm
+MyoRaw	myonode.py	/^class MyoRaw(object):$/;"	c
+Packet	myonode.py	/^class Packet(object):$/;"	c
+Pose	myonode.py	/^class Pose(enum.Enum):$/;"	c
+REST	myonode.py	/^    REST = 0$/;"	v	class:Pose
+RIGHT	myonode.py	/^    RIGHT = 1$/;"	v	class:Arm
+THUMB_TO_PINKY	myonode.py	/^    THUMB_TO_PINKY = 5$/;"	v	class:Pose
+UNKNOWN	myonode.py	/^    UNKNOWN = 0$/;"	v	class:Arm
+UNKNOWN	myonode.py	/^    UNKNOWN = 0$/;"	v	class:XDirection
+UNKNOWN	myonode.py	/^    UNKNOWN = 255$/;"	v	class:Pose
+WAVE_IN	myonode.py	/^    WAVE_IN = 2$/;"	v	class:Pose
+WAVE_OUT	myonode.py	/^    WAVE_OUT = 3$/;"	v	class:Pose
+XDirection	myonode.py	/^class XDirection(enum.Enum):$/;"	c
+X_TOWARD_ELBOW	myonode.py	/^    X_TOWARD_ELBOW = 2$/;"	v	class:XDirection
+X_TOWARD_WRIST	myonode.py	/^    X_TOWARD_WRIST = 1$/;"	v	class:XDirection
+__init__	myonode.py	/^    def __init__(self, ords):$/;"	m	class:Packet
+__init__	myonode.py	/^    def __init__(self, tty):$/;"	m	class:BT
+__init__	myonode.py	/^    def __init__(self, tty=None):$/;"	m	class:MyoRaw
+__repr__	myonode.py	/^    def __repr__(self):$/;"	m	class:Packet	file:
+add_arm_handler	myonode.py	/^    def add_arm_handler(self, h):$/;"	m	class:MyoRaw
+add_emg_handler	myonode.py	/^    def add_emg_handler(self, h):$/;"	m	class:MyoRaw
+add_handler	myonode.py	/^    def add_handler(self, h):$/;"	m	class:BT
+add_imu_handler	myonode.py	/^    def add_imu_handler(self, h):$/;"	m	class:MyoRaw
+add_pose_handler	myonode.py	/^    def add_pose_handler(self, h):$/;"	m	class:MyoRaw
+armPub	myonode.py	/^    armPub = rospy.Publisher('myo_arm', MyoArm, queue_size=10)$/;"	v
+armState	myo-turtleSim.py	/^    armState = 0;$/;"	v
+ave	analogTurtle.py	/^	ave=(aveLeft+aveRight)\/2$/;"	v
+aveLeft	analogTurtle.py	/^	aveLeft=(emgArr[4]+emgArr[5]+emgArr[6]+emgArr[7])\/4$/;"	v
+aveRight	analogTurtle.py	/^	aveRight=(emgArr[0]+emgArr[1]+emgArr[2]+emgArr[3])\/4$/;"	v
+connect	myonode.py	/^    def connect(self):$/;"	m	class:MyoRaw
+connect	myonode.py	/^    def connect(self, addr):$/;"	m	class:BT
+connected	myonode.py	/^    connected = 0;$/;"	v
+detect_tty	myonode.py	/^    def detect_tty(self):$/;"	m	class:MyoRaw
+disconnect	myonode.py	/^    def disconnect(self):$/;"	m	class:MyoRaw
+disconnect	myonode.py	/^    def disconnect(self, h):$/;"	m	class:BT
+discover	myonode.py	/^    def discover(self):$/;"	m	class:BT
+drive	myo-turtleSim.py	/^    def drive(gest):$/;"	f
+emgArr	analogTurtle.py	/^	emgArr=emgArr1.data$/;"	v
+emgPub	myonode.py	/^    emgPub = rospy.Publisher('myo_emg', EmgArray, queue_size=10)$/;"	v
+end_scan	myonode.py	/^    def end_scan(self):$/;"	m	class:BT
+gestPub	myonode.py	/^    gestPub = rospy.Publisher('myo_gest', UInt8, queue_size=10)$/;"	v
+get_connections	myonode.py	/^    def get_connections(self):$/;"	m	class:BT
+h	myonode.py	/^        def h(p):$/;"	f	function:BT.wait_event
+handle_data	myonode.py	/^        def handle_data(p):$/;"	f	function:MyoRaw.connect
+handle_event	myonode.py	/^    def handle_event(self, p):$/;"	m	class:BT
+imuPub	myonode.py	/^    imuPub = rospy.Publisher('myo_imu', Imu, queue_size=10)$/;"	v
+multichr	myonode.py	/^def multichr(ords):$/;"	f
+multiord	myonode.py	/^def multiord(b):$/;"	f
+on_arm	myonode.py	/^    def on_arm(self, arm, xdir):$/;"	m	class:MyoRaw
+on_emg	myonode.py	/^    def on_emg(self, emg, moving):$/;"	m	class:MyoRaw
+on_imu	myonode.py	/^    def on_imu(self, quat, acc, gyro):$/;"	m	class:MyoRaw
+on_pose	myonode.py	/^    def on_pose(self, p):$/;"	m	class:MyoRaw
+pack	common.py	/^def pack(fmt, *args):$/;"	f
+proc_arm	myonode.py	/^    def proc_arm(arm, xdir):$/;"	f
+proc_byte	myonode.py	/^    def proc_byte(self, c):$/;"	m	class:BT
+proc_emg	myonode.py	/^    def proc_emg(emg, moving, times=[]):$/;"	f
+proc_imu	myonode.py	/^    def proc_imu(quat1, acc, gyro):$/;"	f
+proc_pose	myonode.py	/^    def proc_pose(p):$/;"	f
+read_attr	myonode.py	/^    def read_attr(self, attr):$/;"	m	class:MyoRaw
+read_attr	myonode.py	/^    def read_attr(self, con, attr):$/;"	m	class:BT
+recv_packet	myonode.py	/^    def recv_packet(self, timeout=None):$/;"	m	class:BT
+recv_packets	myonode.py	/^    def recv_packets(self, timeout=.5):$/;"	m	class:BT
+remove_handler	myonode.py	/^    def remove_handler(self, h):$/;"	m	class:BT
+run	myonode.py	/^    def run(self, timeout=None):$/;"	m	class:MyoRaw
+send_command	myonode.py	/^    def send_command(self, cls, cmd, payload=b'', wait_resp=True):$/;"	m	class:BT
+setArm	myo-turtleSim.py	/^    def setArm(data):$/;"	f
+start_raw	myonode.py	/^    def start_raw(self):$/;"	m	class:MyoRaw
+strength	analogTurtle.py	/^    def strength(emgArr1):$/;"	f
+text	common.py	/^def text(scr, font, txt, pos, clr=(255,255,255)):$/;"	f
+tsPub	analogTurtle.py	/^    tsPub = rospy.Publisher("turtle1\/cmd_vel", Twist, queue_size=10)$/;"	v
+tsPub	myo-turtleSim.py	/^    tsPub = rospy.Publisher("turtle1\/cmd_vel", Twist, queue_size=10)$/;"	v
+turtlesimPub	myo-turtleSim.py	/^    turtlesimPub = rospy.Publisher("directs", String, queue_size=10)$/;"	v
+unpack	common.py	/^def unpack(fmt, *args):$/;"	f
+val	myonode.py	/^		val = 0$/;"	v	class:MyoRaw
+vibrate	myonode.py	/^    def vibrate(self, length):$/;"	m	class:MyoRaw
+wait_event	myonode.py	/^    def wait_event(self, cls, cmd):$/;"	m	class:BT
+write_attr	myonode.py	/^    def write_attr(self, attr, val):$/;"	m	class:MyoRaw
+write_attr	myonode.py	/^    def write_attr(self, con, attr, val):$/;"	m	class:BT
